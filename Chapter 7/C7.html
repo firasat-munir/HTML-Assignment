@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="http://www.example.com/login.php" method="post">
+        <p> Username:
+        <input type="text" name="username" size="15" maxlength="30"></p>
+        <p> Password:
+        <input type="password" name="password" size="15" maxlength="30"></p>
+        <p>  Date of Birth:
+        <input type="date" name="dob"></p>
+        <p>  Web URL:
+        <input type="url" name="url" size="15" maxlength="255"></p>
+        <p>  Address:
+        <input type="text" name="address" size="15" maxlength="255"></p>
+        <p> City:
+        <select name="city">
+            <option>Karachi</option>
+            <option>Hyderabad</option>
+            <option>Islamabad</option>
+        </select></p>
+        <p> State:
+        <input type="text" name="state" size="8" maxlength="10"></p>
+        <p> Zip:
+        <input type="text" name="zip" size="8" maxlength="10"></p>
+        <p> Magazine:
+        <select name="magazine" multiple>
+            <option value="newsweek">Newsweek</option>
+            <option value="time">Time</option>
+            <option value="fortune">Fortune</option>
+            <option value="tvguide">TV Guide</option>
+        </select>
+        </p>
+       
+        <fieldset style="width: 30%;">
+            <legend>Contact Details</legend>
+            <p>
+                Email:<br>
+                <input type="email" name="email"><br>
+                Mobile:<br>
+                <input type="tel" name="mobile"><br>
+                Telephone:<br>
+                <input type="tel" name="telephone">
+            </p>
+        </fieldset>
+        <p>
+            Additional Comments:<br>
+            <textarea name="comments" rows="6" cols="35"></textarea>
+        </p>
+        <p>
+            Upload your profile picture:
+            <input type="file" name="dp"><br>
+            <input type="submit" value="Upload">
+        </p>
+            <input type="submit" value="Send Your Order"><br><br><br>
+        <p>
+            Email Address:
+            <input type="email" name="email address"><br>
+            Subscription:
+            <input type="radio" name="subs" value="1year" checked />1 year
+            <input type="radio" name="subs" value="2year" />2 years<br>
+            <input type="checkbox">Yes! Put me on the list!
+        </p>
+        <input type="image" src="Subscribe.png" width="150">
+    </form> 
+</body>
+</html>
